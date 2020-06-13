@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash
 
 # Enforce starting as root
 if [ "0" -ne "`id -u`" ]; then
