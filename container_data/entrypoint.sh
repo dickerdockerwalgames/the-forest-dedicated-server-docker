@@ -8,8 +8,9 @@ fi
 
 # Export environment variables which are needed later
 export THE_FOREST_APPLICATION_EXE="TheForestDedicatedServer.exe"
-export STEAM_APPID="556450"
 export THE_FOREST_DIR="/theforest_ds"
+export STEAM_APPID
+export STEAM_LOGIN
 export THE_FOREST_CFG_DIR="/theforest_ds_config"
 export THE_FOREST_SAVE_DIR="${THE_FOREST_CFG_DIR}/saves"
 
