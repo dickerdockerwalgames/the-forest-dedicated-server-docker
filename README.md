@@ -6,7 +6,7 @@ The image uses Debian Stable aka Buster since newer Wine versions (5+) yield sev
 
 ## Getting started
 In order to run this image, adapt these lines to your needs and run them:
-`
+```bash
 docker run -it -d --rm --name theforest_ds_container \
     -p 27015:27015/tcp -p 27015:27015/udp \
     -p 27016:27016/tcp -p 27016:27016/udp \
@@ -15,10 +15,10 @@ docker run -it -d --rm --name theforest_ds_container \
     -v "/absolute/host/dir/config-save-dir":"/theforest_ds_config" \
     -v "/absolute/host/dir/wine-prefix":"/theforest_wineprefix" \
     theforest_ds:latest
-`
+```
 
 The same command using named volumes:
-`
+```bash
 docker run -it -d --rm --name theforest_ds_container \
     -p 27015:27015/tcp -p 27015:27015/udp \
     -p 27016:27016/tcp -p 27016:27016/udp \
@@ -27,7 +27,7 @@ docker run -it -d --rm --name theforest_ds_container \
     -v "/absolute/host/dir/config-save-dir":"/theforest_ds_config" \
     -v "wine-prefix":"/theforest_wineprefix" \
     theforest_ds:latest
-`
+```
 
 The game server's executable files will be saved in "server-files".
 The game server's wine environment will be saved in "wine-prefix".
