@@ -3,8 +3,19 @@ Docker image for running a dedicated server of the indie game "The Forest".
 This project contains the required files to build a Docker image for The Forest's windows-based dedicated server.
 The image uses Debian Stable aka Buster since newer Wine versions (5+) yield several problems trying to run this game server.
 
+**Disclaimer: this project is in a very premature state. Don't expect everything to work (e.g. AI might behave odd sometimes). There is no guarantee that data loss won't happen. The usage of this project and any consquences arising from it is at YOUR sole risk!**
 
 ## Getting started
+
+### Building the image
+
+To build the image enter the following line:
+```bash
+docker build --tag theforest_ds:latest .
+```
+
+### Running the image
+
 In order to run this image, adapt these lines to your needs and run them:
 ```bash
 docker run -it -d --rm --name theforest_ds_container \
